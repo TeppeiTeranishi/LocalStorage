@@ -36,6 +36,13 @@ h1{
     font-weight: 200;
 }
 
+.parts{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+
 .parts li{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px 0;
