@@ -16,11 +16,11 @@ function addItem(e) {
 }
 
 function populateList(parts = [], partsList) {
-    partsList.inneHTML = parts.map((parts, i) => {
+    partsList.innerHTML = parts.map((part, i) => {
         return `
         <li>
-            <input type="checkbox" data-index=${i} id="item${i}" ${parts.done ? 'checked' : ''} />
-            <label for="item${i}">${parts.text}</label>
+            <input type="checkbox" data-index=${i} id="item${i}" ${part.done ? 'checked' : ''}/>
+            <label for="item${i}">${part.text}</label>
         </li>
         `;
     }).join('');
